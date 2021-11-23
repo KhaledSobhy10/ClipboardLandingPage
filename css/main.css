@@ -1,0 +1,278 @@
+:root{
+
+--strongCyan: hsl(171, 66%, 44%);
+--lightBlue: hsl(233, 100%, 69%);
+--darkGrayishBlue: hsl(210, 10%, 33%);
+--grayishBlue: hsl(201, 11%, 66%);
+--seconderyFontColor:#888;
+--defaultFontSize:18px;
+
+}
+
+
+* {
+    font-family: 'Bai Jamjuree', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.contanier{
+    padding: 50px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .contanier{
+        width: 564px;
+    }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .contanier{
+        width: 756px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .contanier{
+        width: 980px;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .contanier{
+        width: 1188px;
+    }
+ }
+
+
+ /* Start header  */
+ header{
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ header img{
+     transition: transform 1s;
+     transform: rotate(365deg);
+ }
+
+  .section-head {
+     padding-top: 30px;
+     padding-bottom: 30px;
+ }
+
+   p {
+     padding-top: 10px;
+     padding-bottom: 10px;
+     font-size: 14px;
+     color: var(--seconderyFontColor);
+     line-height: 2;
+ }
+
+  .download-links{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+ }
+  .download-links a{
+    color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgb(211, 196, 196);
+ }
+
+ 
+  .download-links a:first-of-type{
+     background-color: var(--strongCyan);
+ }
+
+ .download-links a:first-of-type:hover{
+    background-color: hsl(171, 74%, 52%);
+
+}
+
+  .download-links a:last-of-type{
+    background-color: var(--lightBlue);
+}
+.download-links a:last-of-type:hover{
+    background-color: hsl(233, 89%, 58%);
+}
+
+ /* End Header */
+
+/* Start feature-info */
+.tracking-feature{
+    padding:50px;
+}
+.tracking-feature .section-head{
+    display: block;
+    text-align: center;
+}
+.tracking-feature .content{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.tracking-feature .img-holder{
+    width: fit-content;
+
+}
+.tracking-feature img{
+    max-width: 100%;
+}
+
+.tracking-feature .info-box{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    line-height: 2;
+    align-items: center;
+    
+}
+.tracking-feature .info-box .feature-info{
+    width: 300px;
+    max-width: 100%; 
+}
+.tracking-feature .info-box .feature-info h4{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+@media (max-width:1109px) {
+    .tracking-feature .img-holder{
+        width: 100%;       
+        text-align: center;
+    }
+    .tracking-feature .info-box{
+       width: fit-content;  
+       margin-left: 0;  
+
+    }
+    .tracking-feature .info-box .feature-info{
+        text-align: center;
+         width: 100%;
+    }
+}
+/* Emd feature-info */
+
+/* Start access feature */
+.access-feature img{
+    max-width: 100%;
+}
+/* End access feature */
+
+/* Start productive-tools */
+.productive-tools .tools{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr)); 
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+@media (max-width:330px) {
+    .productive-tools .tools{
+        grid-template-columns: repeat(auto-fill , minmax(100% , 1fr)); 
+    }
+}
+
+.productive-tools .tools .tool{
+    padding: 10px;
+}
+
+.productive-tools .tools .tool h1{
+    font-weight: bold;
+}
+
+.productive-tools img{
+    height: 30px;
+    margin: 10px;
+}
+
+/* End productive-tools */
+
+
+
+/* Start trust-by-companies */
+.trust-by-companies .contanier{
+   display: grid;
+   grid-template-columns: repeat(auto-fill , minmax(200px,1fr));
+   row-gap: 50px;
+}
+
+.trust-by-companies img{
+   justify-self: center;
+}
+/* End trust-by-companies */
+
+
+
+/* Start footer */
+footer{
+    background-color: #eee;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+}
+
+footer .contanier{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .contanier a{
+    color: rgb(88, 88, 88);
+}
+
+footer .contanier .another-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer .contanier .social-media{
+    display: flex;
+    gap: 20px;
+}
+
+footer .contanier a:hover {
+    color: var(--strongCyan);
+}
+
+@media (max-width:576px) {
+    footer .contanier .another-links , footer .contanier{
+       flex-direction: column;
+    }
+}
+/* End footer */
